@@ -4,7 +4,8 @@ scenario: multi-task-processing
 spec:
   template:
     - role: "system"
-      content: "{{ ?instruction }}"
+      content: |
+        provide the differences between Agent to Agent Protocol and Agent Communication Protocol
     - role: "user"
       content: "Take {{ ?user_input }} from here"
   defaults:
